@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.page-header {
+  color: $dark-blue;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: 2.8em;
+  margin: 0.5em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.page-chatter {
+  font: normal 1.2em/1.5 'arial','helvetica',sans-serif;
+  color: #666;
+  margin: 1em auto 1em 0;
+  max-width: 50em;
+}
+
+.page-chatter a {
+  color: $blue2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  &:hover {
+    color: $dark-blue;
+    transition: color 0.2s ease;
+
+  }
+}
+
+.topic-header {
+  color: $dark-blue;
+  // border-bottom: solid 1px $dark-blue;
+  font-family: "Futura Today Bold", Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  // text-decoration: underline;
+  text-transform: uppercase;
+
+}
+
+.topic-chatter {
+  font-family: "Futura Today", Arial, sans-serif;
+  max-width: 30em;
+}
+
+.hashtags {
+  color: $light-blue;
+  margin-top: 0;
+}
+
+
+.credits {
+  color: #666;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: $breakPoint-medium) {
+  .page-header {
+    font-size: 1.8em;
+  }
+}

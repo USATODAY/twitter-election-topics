@@ -1,0 +1,36 @@
+.inner-circle {
+  text {
+    font-size: 0.7em;
+  }
+}
+
+.chart {
+  margin-top: 1em;
+}
+
+.chart-label {
+  display: inline-block;
+  float: left;
+  font-family: "Futura Today Light", Arial, sans-serif;
+  font-size: 2em;
+  margin-right: 2%;
+  text-align: center;
+  width: 31%;
+}
+
+.chart-labels{
+  font-family: "Futura Today Light", Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+.age {
+  fill: $yellow;
+}
+
+.gender{
+  fill: $blue2;
+}
+
+.states {
+  fill: $green2;
+}

@@ -1,0 +1,119 @@
+.popover {
+  z-index: 99999;
+  max-width: 350px;
+  min-width: 100px;
+  text-align: center;
+  white-space: normal;
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: $shadow-standard;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  // padding: 1px;
+}
+
+.popover {
+  // display: none;
+}
+
+
+
+.popover-title, .popover-content {
+  padding: 5px 10px;
+}
+
+.popover-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #EBEBEB;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  font: 12px/1.231 'Futura Today', Helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+
+
+.popup-line {
+  padding: 0 10px;
+}
+
+
+
+
+.popover-close-button {
+  opacity: .75;
+  background-image: url(http://www.gannett-cdn.com/experiments/usatoday/_common/_maps/images/icons-000000@2x.png);
+  background-repeat: no-repeat;
+  background-size: 26px 260px;
+  content: '';
+  display: inline-block;
+  
+  vertical-align: middle;
+  background-position: -3px -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0 3px 0 0;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.intro-popover {
+  @extend .popover;
+  color: $dark-grey;
+  font-family: 'Futura Today Light', arial, sans-serif;
+  font-size: 0.8em;
+  left: -20px;
+  padding: 2em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 1em;
+  width: 200px;
+  .arrow-right {
+    position: absolute;
+    right: -11px;
+    top: 1.75em;
+  }
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  
+  border-left: 11px solid #fff;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #fff;
+}
+
+.popover .arrow-down {
+  position: absolute;
+  bottom: -11px;
+  left: 30%;
+}
+
+.popover .label {
+  font-family: 'Futura Today Light', Helvetica, arial, sans-serif;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+

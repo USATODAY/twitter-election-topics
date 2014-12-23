@@ -1,0 +1,26 @@
+.previous-button, .next-button {
+  cursor: pointer;
+  display: block;
+  height: 47px;
+ 
+  overflow: hidden;
+  
+  width: 27px;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.previous-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+  .arrow-inner {
+    position: relative;
+    top: -47px;
+  }
+}
+

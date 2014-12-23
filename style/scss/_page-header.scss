@@ -1,0 +1,26 @@
+.header-wrap {
+  margin-bottom: 2em;
+  .button {
+    margin: 1em 0;
+    width: 10em;
+  }
+  .chatter-show-button {
+    // @media (min-width: 1200px) {
+    //   display: none;
+    // }
+  }
+}
+
+.page-chatter {
+  max-height: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  &.show {
+    max-height: 1000px;
+    transition: all 0.5s ease;
+  }
+
+  @media(min-width: 1200px) {
+    // max-height: none;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="topic-nav">
+  <h3 class="nav-header">Issues</h3>
+  <p>ranked by Tweet count</p>
+  <div class="mobile-nav-close-button"></div>
+  <ul>
+
+    
+      
+    
+    <% _.each(sources, function(source) { %>
+      <li class="nav-item"><a href="<%= app.topicURL(source)  %>" onclick="Analytics.click("navigation clicked");"><%= source.rank %>. <%= source.cleanLabel %></a></li>
+      
+    <%}); %>
+
+  </ul>
+</div>

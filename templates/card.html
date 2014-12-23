@@ -1,0 +1,28 @@
+<article id="<%= domID %>" class="card <%= className %> <% if(app.blnState) {%>state <% } %>">
+    <h2 class="topic-header"><%= topicName %></h2>
+    <h3 class="hashtags"><%= hashtags %></h3>
+    <p class="topic-chatter"><%= chatter %></p>
+      <div id="social">
+
+    <% 
+      var encodedURL = encodeURIComponent("http://www.gannett-cdn.com/experiments/usatoday/2014/10/election-topics/#topic/" + domID);
+      var encodedURL2 = encodeURI("http://www.gannett-cdn.com/experiments/usatoday/2014/10/election-topics/%23topic/" + domID);
+      var encodedStr = encodeURIComponent("USA TODAY/TWITTER ISSUES INDEX: " + topicName);
+      var encodedTitle = encodeURIComponent("USA TODAY/TWITTER ISSUES INDEX");
+      var encodedQuestion = encodeURIComponent("");
+      var fbRedirectUrl = encodeURIComponent("http://www.gannett-cdn.com/usatoday/_common/_dialogs/fb-share-done.html");
+
+      var tweetUrl = "https://twitter.com/intent/tweet?url=" + encodedURL + "&text=" + encodedStr + "&via=USATODAY"; 
+
+      var fbUrl = "javascript: var sTop=window.screen.height/2-(218);var sLeft=window.screen.width/2-(313);window.open('https://www.facebook.com/dialog/feed?display=popup&app_id=215046668549694&link=" + encodedURL2 + "&picture=http://www.gannett-cdn.com/experiments/usatoday/2014/10/election-topics/img/fb-post.jpg&name=" + encodedTitle +"&description=" + topicName + "&redirect_uri=http://www.gannett-cdn.com/experiments/usatoday/_common/_dialogs/fb-share-done.html','sharer','toolbar=0,status=0,width=580,height=400,top='+sTop+',left='+sLeft);Analytics.click('Facebook share');void(0);";
+
+      var emailURL = "mailto:?body=" + topicName +  "%0d%0d" + encodedURL +"&subject=" + encodedTitle;
+      %>
+    
+      <a href="<%= tweetUrl %>" class='social-link' id='twitter-share'> <img src='img/twitter.svg' alt="twitter" class="social-icon"></a>
+      <a href="<%= fbUrl %>"><img src='img/fb.svg' alt="twitter" class="social-icon"></a>
+      <a href="<%= emailURL %>" onclick="Analytics.click('Email Share')" class="social-link" id="email-share"><img src="img/email.svg" alt="email" class="social-icon">
+        </a>
+    </div>
+    <div class="chart"></div>
+</article>
