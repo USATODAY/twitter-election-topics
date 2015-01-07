@@ -68,6 +68,7 @@ python_result.xml
 coverage.xml
 .cache/
 www/
+img/
 
 # Installer logs
 pip-log.txt
